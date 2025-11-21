@@ -1880,3 +1880,36 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+/* ------------------------------------------------------
+   FIX FOR MISSING TEXT
+------------------------------------------------------ */
+
+/* ------------------------------------------------------
+   FIX FOR MISSING TEXT (LIGHT YELLOW VERSION)
+------------------------------------------------------ */
+
+/* 1. Force the project items to be visible */
+.project-item {
+  display: block !important; 
+}
+
+/* 2. Make the paragraph text Light Yellow */
+.project-item p {
+  color: #fff9c4; /* This is a soft light yellow */
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+/* 3. Make the "Strong" (Bold) text a brighter Gold/Yellow */
+.project-item p strong {
+  color: #ffd700; /* Gold color for emphasis */
+  font-weight: var(--fw-600);
+}
+
+/* 4. Update the main body text color to Light Yellow */
+body {
+  color: #fff9c4; 
+}
