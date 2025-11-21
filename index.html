@@ -205,9 +205,47 @@
         <header><h2 class="h2 article-title">Projects</h2></header>
         <section class="projects">
           <ul class="project-list">
-            <li class="project-item"><h3 class="project-title">Improved Visual Reasoning in Compact VLMs</h3><p>Enhanced compact VLMs (PaLI-3) with CoT-based fine-tuning (+3.5%). Proposed ReAlign for preference-guided logic-aware training.</p></li>
-            <li class="project-item"><h3 class="project-title">3D Gaussian Splatting</h3><p>Developed 3D Gaussian Splatting model to uplift 2D images into 3D world frames using sphere initialization, RGB loss, and SDS loss.</p></li>
-            <li class="project-item"><h3 class="project-title">Automatic Speech Translation</h3><p>Built a multilingual speech-to-speech translation system for defense hackathon. Achieved 2nd place among 100+ teams.</p></li>
+
+            <li class="project-item active">
+              <h3 class="project-title">Adaptive Visual Scene Understanding (NeurIPS 2024)</h3>
+              <p><strong>Introduction:</strong> This project aims to improve long-horizon visual reasoning through continual Scene Graph Generation, addressing the challenge of catastrophic forgetting.
+              <br><strong>Methods:</strong> Designed a new incremental benchmark and developed RAS, a regularization-based adaptation strategy.
+              <br><strong>Results:</strong> Achieved state-of-the-art retention and stability across sequential tasks.
+              <br><strong>Discussion:</strong> Demonstrates that structured adaptation can outperform existing rehearsal-heavy baselines. <strong>Role:</strong> Led dataset design, modeling, and experiments.</p>
+            </li>
+
+            <li class="project-item active">
+              <h3 class="project-title">ViGoRL – Grounded RL for Visual Reasoning</h3>
+              <p><strong>Introduction:</strong> Multi-turn reasoning remains a limitation for most VLMs; this project introduces grounding through reinforcement learning.
+              <br><strong>Methods:</strong> Built an RL agent enabling VLMs to ask clarifying questions using a custom reward framework.
+              <br><strong>Results:</strong> Outperformed GPT-4V on V*Bench and achieved strong gains on SAT-2 and BLINK.
+              <br><strong>Discussion:</strong> Highlights the effectiveness of active information gathering for reasoning. <strong>Role:</strong> Implemented reward design, training pipeline, and evaluation.</p>
+            </li>
+
+            <li class="project-item active">
+              <h3 class="project-title">3D Gaussian Splatting from a Single Image</h3>
+              <p><strong>Introduction:</strong> High-quality 3D reconstruction from a single image is challenging yet valuable for robotics and AR.
+              <br><strong>Methods:</strong> Used SDS loss with sphere initialization to generate 3D Gaussian fields. Developed custom renderer.
+              <br><strong>Results:</strong> Produced accurate 3D structures with competitive depth and reprojection metrics.
+              <br><strong>Discussion:</strong> Shows feasibility of single-image 3D, with future potential for multi-view consistency. <strong>Role:</strong> Built full pipeline end‑to‑end.</p>
+            </li>
+
+            <li class="project-item active">
+              <h3 class="project-title">Compact VLM Reasoning via CoT & ReAlign</h3>
+              <p><strong>Introduction:</strong> Compact VLMs lack deep reasoning; this project strengthens reasoning without increasing model size.
+              <br><strong>Methods:</strong> Fine‑tuned PaLI‑3 using Chain‑of‑Thought data and created ReAlign, a logic‑guided preference optimization.
+              <br><strong>Results:</strong> +3.5% improvement across benchmarks with better logical consistency.
+              <br><strong>Discussion:</strong> Demonstrates lightweight alignment can significantly improve compact models. <strong>Role:</strong> Led CoT dataset creation, ablations, and training.</p>
+            </li>
+
+            <li class="project-item active">
+              <h3 class="project-title">Game Understanding & Anomaly Detection (PlayStation)</h3>
+              <p><strong>Introduction:</strong> Modern games require robust automated understanding systems for QA and gameplay analysis.
+              <br><strong>Methods:</strong> Built multimodal VLM reasoning modules and anomaly detection pipelines.
+              <br><strong>Results:</strong> Improved internal benchmarks by +5–6% over previous systems.
+              <br><strong>Discussion:</strong> Enhanced reliability of automated game analytics. <strong>Role:</strong> Designed VLM reasoning components and evaluation tools.</p>
+            </li>
+
           </ul>
         </section>
       </article>
